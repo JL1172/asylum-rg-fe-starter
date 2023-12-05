@@ -1,8 +1,8 @@
 import React from 'react';
 // ADD IMPORTS BACK FOR GRAPHS SECTION
 //!made the data iteratable and localized in renderingPageData
-import { graphsArr } from './renderingPageData';
-import { disparityInsights } from './renderingPageData';
+import { downloadDataUrl, graphsArr } from './landingPageData';
+import { disparityInsights } from './landingPageData';
 //!made the data iteratable and localized in renderingPageData
 import HrfPhoto from '../../../styles/Images/paper-stack.jpg';
 import '../../../styles/RenderLandingPage.less';
@@ -51,12 +51,14 @@ function RenderLandingPage(props) {
         >
           View the Data
         </Button>
-        <Button
-          type="default"
-          style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
-        >
-          Download the Data
-        </Button>
+        <a href={downloadDataUrl} download={true}>
+          <Button
+            type="default"
+            style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
+          >
+            Download the Data
+          </Button>
+        </a>
       </div>
 
       <div className="middle-section">

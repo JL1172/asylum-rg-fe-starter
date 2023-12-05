@@ -28,3 +28,6 @@ export const graphsArr = [
   { src: GrantRatesByNationalityImg, alt: 'Search Grant Rates By Nationality' },
   { src: GrantRatesOverTimeImg, alt: 'Search Grant Rates Over Time' },
 ];
+
+export const downloadDataUrl =
+  'https://humanrightsfirst.org/wp-content/uploads/2022/10/COW2021001887-I589Data.csv';
