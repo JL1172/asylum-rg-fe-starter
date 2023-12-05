@@ -32,7 +32,7 @@ function RenderLandingPage(props) {
         </div>
       </div>
 
-      {/* Graphs Section: Add code here for the graphs section for your first ticket */}
+      {/* //!Graphs Section: Add code here for the graphs section for your first ticket */}
       <div className="graphs-section">
         {graphsArr.map((n, i) => {
           return (
@@ -43,6 +43,7 @@ function RenderLandingPage(props) {
           );
         })}
       </div>
+      {/* //!Graphs Section: Add code here for the graphs section for your first ticket */}
       <div className="view-more-data-btn-container">
         <Button
           type="default"
@@ -51,6 +52,7 @@ function RenderLandingPage(props) {
         >
           View the Data
         </Button>
+        {/* //!added dowloadable option */}
         <a href={downloadDataUrl} download={true}>
           <Button
             type="default"
@@ -59,6 +61,7 @@ function RenderLandingPage(props) {
             Download the Data
           </Button>
         </a>
+        {/* //!added dowloadable option */}
       </div>
 
       <div className="middle-section">
@@ -78,7 +81,7 @@ function RenderLandingPage(props) {
         </div>
       </div>
       <div>
-        {/* Bottom Section: Add code here for the graphs section for your first ticket */}
+        {/* //!Bottom Section: Add code here for the graphs section for your first ticket */}
         <div className="bottom-section">
           <h1>Systemic Disparity Insights</h1>
           <div id="dataContainer">
@@ -106,6 +109,7 @@ function RenderLandingPage(props) {
             </a>
           </div>
         </div>
+        {/* //!Bottom Section: Add code here for the graphs section for your first ticket */}
         <div className="back-to-top-container">
           <p onClick={() => scrollToTop()} className="back-to-top">
             Back To Top ^
