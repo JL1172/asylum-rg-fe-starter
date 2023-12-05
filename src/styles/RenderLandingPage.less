@@ -8,9 +8,10 @@
 @tablet-large: ~"(min-width: 769px) and (max-width: 1024px)";
 @laptop: ~"(min-width: 1025px) and (max-width: 1280px)";
 
+
 .header {
     background-color: @main-color;
-    display:flex;
+    display: flex;
     text-align: center;
     width: 100%;
     height: 20vh;
@@ -41,17 +42,46 @@
     font-size: 1.2rem;
 }
 
-// .graphs-section {
-//  ADD THIS BACK IN WHEN YOU HAVE THE GRAPHS SECTION
-// }
+// the section i implemented
+.graphs-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 4.5rem;
 
+    .img-containers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 15rem;
+        height: fit-content;
+
+        img {
+            width: 18rem;
+            height: 11rem;
+            object-fit: contain;
+        }
+    }
+}
+
+// the section i implemented
+//changed some styles 
 .view-more-data-btn-container {
     height: 44px;
-    width: 180px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 10%;
+    display: flex; //
+    width: 100%; //
+    justify-content: center; //
+
+    button {
+        margin-left: 1.5rem; //
+    }
 }
+
+//changed some styles
 
 .middle-section {
     display: flex;
@@ -74,11 +104,53 @@
     font-family: 'acumin';
     font-size: 1.4rem;
 }
+//section i worked on 
+.bottom-section {
+    //flex
+    display: flex;
+    flex-direction: column;
+    //flex
+    //font family and text styles
+    font-family: "moneta";
+    text-align: center;
 
-// .bottom-section {
-//      ADD THIS BACK IN WHEN YOU HAVE A BOTTOM SECTION
-// }
-
+    //sizing
+    width: 100%;
+    min-height:  50vh;
+    height: fit-content;
+    margin-top: 10%;
+    //sizing
+    h1 {
+        font-size: 2.8rem;
+    }
+    #dataContainer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;        
+        height: fit-content;
+        margin-top: 10rem;
+        margin-bottom: 3.5rem;
+    }
+    .disparity-insights-containers {
+        height: 15rem;
+        width: 433px;
+        display: flex;
+        flex-direction: column;
+        h2 {
+            font-size: 2.6rem;
+            margin-top: 0;
+            margin-bottom: .5rem;
+        }
+        h3 {
+            font-size: 18px;
+        }
+    }
+}
+//section i worked on 
+.back-to-top-container {
+    width: 100%;
+    text-align: center;
+}
 .back-to-top {
     width: 8%;
     font-size: 1.2rem;
@@ -95,29 +167,30 @@
 }
 
 .ant-btn:hover {
-    border-color: @secondary-color  !important;
+    border-color: @secondary-color !important;
 }
 
 @media @mobile-small {
     .header {
         height: 30vh;
-       display: block;
-       position: relative;
+        display: block;
+        position: relative;
     }
-    .hrf-logo-img-container{
-       height:fit-content;
-       position: absolute;
-       top: 0;
-       left: 0;
-       margin: 2% 2%;
+
+    .hrf-logo-img-container {
+        height: fit-content;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 2% 2%;
     }
 
     .hrf-logo-img-container img {
         height: 30px;
         width: 48px;
-       
+
     }
-   
+
     .header-text-container h1 {
         font-size: 1.5rem;
         padding-top: 5%;
@@ -170,7 +243,7 @@
         width: 85%;
         text-align: center;
         margin: 0 auto;
-       
+
     }
 
     .middle-section-text-container h3 {
@@ -213,23 +286,24 @@
 @media @mobile-medium {
     .header {
         height: 20vh;
-       display: block;
-       position: relative;
+        display: block;
+        position: relative;
     }
-    .hrf-logo-img-container{
-       height:fit-content;
-       position: absolute;
-       top: 0;
-       left: 0;
-       margin: 2% 2%;
+
+    .hrf-logo-img-container {
+        height: fit-content;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 2% 2%;
     }
 
     .hrf-logo-img-container img {
         height: 30px;
         width: 48px;
-       
+
     }
-   
+
     .header-text-container h1 {
         font-size: 1.5rem;
         padding-top: 5%;
@@ -271,7 +345,7 @@
         background-color: @secondary-color;
         padding-top: 5%;
         text-align: center;
-        
+
     }
 
     .hrf-img {
@@ -281,7 +355,7 @@
 
     .middle-section-text-container {
         width: 85%;
-       text-align: center;
+        text-align: center;
         margin: 0 auto;
     }
 
@@ -328,22 +402,23 @@
 @media @mobile-large {
     .header {
         height: 20vh;
-       display: block;
-       position: relative;
+        display: block;
+        position: relative;
     }
-    .hrf-logo-img-container{
-       height:fit-content;
-       position: absolute;
-       top: 0;
-       left: 0;
-       margin: 2% 2%;
+
+    .hrf-logo-img-container {
+        height: fit-content;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 2% 2%;
     }
 
     .hrf-logo-img-container img {
         height: 30px;
         width: 48px;
     }
-   
+
     .header-text-container h1 {
         font-size: 1.5rem;
         padding-top: 5%;
@@ -394,7 +469,7 @@
 
     .middle-section-text-container {
         width: 85%;
-       text-align: center;
+        text-align: center;
         margin: 0 auto;
     }
 
@@ -436,29 +511,30 @@
         display: flex;
         flex-wrap: wrap;
     }
-    
+
 }
 
 @media @tablet-small {
     .header {
         height: 30vh;
-       display: block;
-       position: relative;
+        display: block;
+        position: relative;
     }
-    .hrf-logo-img-container{
-       height:fit-content;
-       position: absolute;
-       top: 0;
-       left: 0;
-       margin: 1% 1%;
+
+    .hrf-logo-img-container {
+        height: fit-content;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 1% 1%;
     }
 
     .hrf-logo-img-container img {
         height: 66px;
         width: 108px;
-       
+
     }
-   
+
     .header-text-container h1 {
         font-size: 2.5rem;
         padding-top: 5%;
@@ -556,23 +632,24 @@
 @media @tablet-large {
     .header {
         height: 30vh;
-       display: block;
-       position: relative;
+        display: block;
+        position: relative;
     }
-    .hrf-logo-img-container{
-       height:fit-content;
-       position: absolute;
-       top: 0;
-       left: 0;
-       
+
+    .hrf-logo-img-container {
+        height: fit-content;
+        position: absolute;
+        top: 0;
+        left: 0;
+
     }
 
     .hrf-logo-img-container img {
         height: 83px;
         width: 136px;
-       
+
     }
-   
+
     .header-text-container h1 {
         font-size: 3.5rem;
         padding-top: 5%;
@@ -625,6 +702,7 @@
         height: 232px;
         width: 450px;
     }
+
     .grant-rates-over-time-container p {
         font-size: 2.5rem;
     }
@@ -674,9 +752,11 @@
         width: 85%;
         margin-bottom: 5%;
     }
+
     .first-data-point-container h2 {
-       font-size: 3.5rem;
+        font-size: 3.5rem;
     }
+
     .first-data-point-container h3 {
         font-size: 1.5rem;
     }
@@ -685,23 +765,27 @@
         width: 85%;
         margin-bottom: 5%;
     }
+
     .second-data-point-container h2 {
         font-size: 3.5rem;
-     }
-     .second-data-point-container h3 {
-         font-size: 1.5rem;
-     }
+    }
+
+    .second-data-point-container h3 {
+        font-size: 1.5rem;
+    }
 
     .third-data-point-container {
         width: 85%;
         margin-bottom: 5%;
     }
+
     .third-data-point-container h2 {
         font-size: 3.5rem;
-     }
-     .third-data-point-container h3 {
-         font-size: 1.5rem;
-     }
+    }
+
+    .third-data-point-container h3 {
+        font-size: 1.5rem;
+    }
 
     .back-to-top {
         width: 35%;
@@ -733,7 +817,7 @@
     }
 
     .middle-section {
-        display:flex;
+        display: flex;
         width: 100%;
         justify-content: space-evenly;
         padding: 0 2%;
@@ -751,8 +835,8 @@
         padding: 0 2%;
     }
 
-   
- .first-data-point-container {
+
+    .first-data-point-container {
         width: 23%;
     }
 
@@ -763,7 +847,7 @@
     .third-data-point-container {
         width: 23%;
     }
-    
+
     .back-to-top {
         width: 35%;
     }
