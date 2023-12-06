@@ -157,7 +157,6 @@ const rawApiDataToPlotlyReadyInfo = (view, office, data) => {
         return { officeHeatMapDataObject, rowsForTable };
 
       case 'citizenship':
-        console.log(data);
         rowsForTable = [];
         for (let item of data[0].citizenshipResults) {
           rowItem = {
