@@ -9,6 +9,7 @@ import { rawApiDataToPlotlyReadyInfo, useInterval } from '../../../utils';
 
 import { connect } from 'react-redux';
 import { colors } from '../../../styles/data_vis_colors';
+import { updateStateWithNewData } from '../../../axios-util/updateStateWithNewData';
 
 const { primary_accent_color } = colors;
 
@@ -52,8 +53,7 @@ const mapStateToProps = (state, ownProps) => {
 };
 
 function YearLimitsSelect(props) {
-  let { view, office, dispatch, clearQuery, updateStateWithNewData, years } =
-    props;
+  let { view, office, dispatch, clearQuery, years } = props;
   // const yearInputsOnChange = (view, office, e) => {
   //   dispatch(
   //     setHeatMapYears(
@@ -75,6 +75,7 @@ function YearLimitsSelect(props) {
     });
   }, 10);
 
+  //!I made the updateStateWithNewData function globally available
   useEffect(() => {
     updateStateWithNewData(years, view, office, stateSettingFn);
   });
