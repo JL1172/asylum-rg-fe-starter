@@ -32,7 +32,7 @@ ReactDOM.render(
     domain={process.env.DOMAIN || 'dev-eqszr7hd3w01e1xb.us.auth0.com'}
     clientId={process.env.CLIENTID || 'LCT5VqNQ7R9AJACGErRHYKWiiom9Y0fE'}
     authorizationParams={{
-      redirect_uri: 'http://localhost:3000/profile',
+      redirect_uri: window.location.origin,
     }}
   >
     <Router>
