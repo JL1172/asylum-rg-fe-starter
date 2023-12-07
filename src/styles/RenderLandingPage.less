@@ -57,6 +57,7 @@
         min-height: 15rem;
         height: fit-content;
         font-family: "acumin";
+
         img {
             width: 18rem;
             height: 11rem;
@@ -80,6 +81,7 @@
         margin-left: 1.5rem; //
     }
 }
+
 //changed some styles
 
 .middle-section {
@@ -103,7 +105,108 @@
     font-family: 'acumin';
     font-size: 1.4rem;
 }
-//!section i worked on 
+
+//!section i worked on
+#navBarSelection {
+    display: flex;
+}
+
+//!section i worked on
+
+#profilePage {
+    min-height: 65vh;
+    height: fit-content;
+    display: flex;
+    width: 100%;
+    flex-basis: 10rem;
+
+    #firstDiv {
+        border: 1px solid lightgray; //
+        display: flex;
+        justify-content: center;
+        padding-top: 5rem;
+        padding: 3rem;
+        font-family: "beatrice";
+        font-size: 1.5rem;
+        height: 100%;
+    }
+
+    #secondDiv {
+        font-size: 1.1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 2;
+        height: 100%;
+        padding-top: 2rem;
+
+        img {
+            border-radius: 100%;
+            outline: 2px solid lightgrey;
+            margin-bottom: .2rem;
+        }
+
+        h1 {
+            display: block;
+        }
+
+        .rows {
+            margin-top: 2rem;
+            display: flex;
+
+            label {
+                display: flex;
+                color: darkgray;
+                outline: 2px solid lightgrey;
+                border-radius: 10px;
+                width: 25rem;
+                height: 2rem;
+                justify-content: space-around;
+
+                &:hover {
+                    background-color: lightgray;
+                    color: black;
+                }
+
+                div {
+                    color: black;
+                    padding-left: 5px;
+                }
+            }
+        }
+
+    }
+
+    #caution {
+        outline: 2px solid rgb(150, 81, 81) !important;
+        background-color: white;
+        &:hover {
+            background-color: rgb(214, 150, 150) !important;
+        }
+    }
+}
+
+@media screen and (max-width : 840px) {
+    #profilePage {
+        flex-direction: column;
+    }
+
+    #firstDiv {
+        display: flex;
+        align-items: center;
+        height: 16vh !important;
+    }
+
+    #secondDiv {
+        padding-top: 1rem;
+
+        h1 {
+            display: none !important;
+        }
+    }
+}
+
+//!section i worked
 .bottom-section {
     //flex
     display: flex;
@@ -115,42 +218,49 @@
 
     //sizing
     width: 100%;
-    min-height:  50vh;
+    min-height: 50vh;
     height: fit-content;
     margin-top: 10%;
+
     //sizing
     h1 {
         font-size: 2.8rem;
     }
+
     #dataContainer {
         display: flex;
         justify-content: space-evenly;
-        align-items: center;        
+        align-items: center;
         height: fit-content;
         margin-top: 10rem;
         margin-bottom: 3.5rem;
     }
+
     .disparity-insights-containers {
         height: 15rem;
         width: 433px;
         display: flex;
         flex-direction: column;
         font-family: "beatrice";
+
         h2 {
             font-size: 3rem;
             margin-top: 0;
             margin-bottom: .5rem;
         }
+
         h3 {
             font-size: 18px;
         }
     }
 }
+
 //!section i worked on 
 .back-to-top-container {
     width: 100%;
     text-align: center;
 }
+
 .back-to-top {
     width: 8%;
     font-size: 1.2rem;
